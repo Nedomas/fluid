@@ -1,5 +1,5 @@
-import minWidth from './minWidth';
-import maxWidth from './maxWidth';
+import minWidth from './lib/minWidth';
+import maxWidth from './lib/maxWidth';
 import numberParser from 'number-parsing';
 
 export default (min, max) => {

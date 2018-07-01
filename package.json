@@ -1,14 +1,22 @@
 {
-  "name": "@bloometry/fluid",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "@candour/fluid",
+  "version": "1.0.9",
+  "author": "Domas Bitvinskas",
+  "description": "Fluid utility",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/Nedomas/fluid",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Nedomas/fluid.git"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "BABEL_ENV=production babel index.js -d dist && BABEL_ENV=production babel lib/ -d dist/lib"
+  },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.3.0",
     "number-parsing": "^0.3.0"
   }
 }
