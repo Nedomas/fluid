@@ -1,6 +1,6 @@
 {
   "name": "candour-fluid",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "Domas Bitvinskas",
   "description": "Fluid utility",
   "main": "dist/index.js",
