@@ -1,6 +1,6 @@
 {
   "name": "candour-fluid",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "Domas Bitvinskas",
   "description": "Fluid utility",
   "main": "dist/index.js",
@@ -11,10 +11,7 @@
     "url": "git://github.com/candourpro/fluid.git"
   },
   "scripts": {
-    "build": "BABEL_ENV=production babel index.js -d dist && BABEL_ENV=production babel lib/ -d dist/lib"
-  },
-  "dependencies": {
-    "number-parsing": "^0.3.0"
+    "build": "BABEL_ENV=production babel index.js -d dist"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

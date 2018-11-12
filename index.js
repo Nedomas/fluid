@@ -1,14 +1,10 @@
-import minWidth from './lib/minWidth';
-import maxWidth from './lib/maxWidth';
-import numberParser from 'number-parsing';
-
-export default (min, max) => {
-  return `calc(
+export default (min, max, { minWidth = 320, maxWidth = 1600 }) => (
+  `calc(
     ${min}px +
-    (${max} - ${min}) *
+    ${max - min} *
     (
-      (100vw - ${minWidth}) /
-      (${numberParser(maxWidth)} - ${numberParser(minWidth)})
+      (100vw - ${minWidth}px) /
+      ${maxWidth - minWidth}
     )
-  )`;
-};
+  )`
+)
